@@ -1,0 +1,34 @@
+@mixin basic-width($width: 1200px, $p-left: 15px, $p-right:15px) {
+  max-width: $width;
+  width: 100%;
+  padding-left: $p-left;
+  padding-right: $p-right;
+}
+
+@mixin btn-style {
+  width: 170px;
+  height: 50px; 
+  border-radius: 3px;
+  background-color: rgb(153, 134, 117);
+  font-family: Raleway;
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 1.64;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  transition: filter 200ms, border 200ms;
+  &:hover{
+    filter: brightness(130%);
+    border: 1px solid white;
+  }
+}
+
+$title-color: rgb(85, 85, 85);
+$title-fz: 30px;
+$title-fz-tablet: 26px;
+$title-fz-mobile: 22px;
+
+$text-color: rgb(140, 140, 140);
+$text-fz: 16px;
+$text-fz-tablet: 14px;
+$text-fz-mobile: 12px;

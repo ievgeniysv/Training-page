@@ -1,0 +1,217 @@
+@import "var.scss";
+
+.section-5 {
+ width: 100%;
+}
+.section-5-content-wrap {
+  position: relative;
+  width: 100%;
+  padding-top: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @media (max-width:600px) {
+    padding-top: 30px;
+  }
+}
+
+.section-5__img {
+  width: 100%;
+}
+.section-5-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  max-width: 1140px;  
+  width: 100%;
+  position: absolute;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.advertising {
+  @media (max-width: 1200px) {
+    width: calc(25%-15px);
+  }
+}
+/* .adversting__img {
+}
+ */
+.section-5-bottom-container {
+  background-color: #191919;
+  width: 100%;
+}
+
+.section-5-bottom-content-container {
+  display: flex;
+  @include basic-width;
+  padding-top: 80px;
+  justify-content: space-between;
+  @media(max-width: 1200px) {
+    flex-direction: column;
+  }
+}
+
+.section-5-bottom-content-container__left {
+  width: 260px;
+  @media(max-width: 1200px) {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* .bottom-logo {
+}
+.bottom-logo__link {
+} */
+.bottom-contnent-left__text {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.71;
+  text-align: left;
+  color: rgb(85, 85, 85);
+  padding: 30px  0 30px 0;
+  @media(max-width: 1200px) {
+    text-align: center;
+  }
+}
+.bottom-contnent-left__link {
+  font-family: Montserrat;
+  font-size: 14px;
+  line-height: 1.43;
+  text-align: left;
+  color: rgb(209, 209, 209);
+  transition: font-size 200ms;
+  &:hover {
+    font-size: 15px;
+  }
+}
+
+.section-5-bottom-content-container__main {
+  display: flex;
+  justify-content: space-between;
+  width: 890px;
+  @media (max-width: 1200px) {
+    margin: 0 auto;
+  }
+  @media (max-width: 950px) {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+}
+/* .bottom-contnent-main {
+} */
+.posts-and-tweet-container {
+  width: 270px;
+  @media (max-width: 950px) {
+    width: calc(50% -15px);
+  }
+  @media (max-width:600px) {
+    width: 100%;
+  }
+}
+.posts-and-tweet-container__title {
+  padding: 28px 0 33px 0;
+  font-family: Raleway;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: left;
+  color: rgb(255, 255, 255);
+  @media (max-width: 950px) {
+    width: 100%;
+  }
+  @media (max-width: 950px) {
+    text-align: center;
+  }
+}
+.post {
+  &:hover {
+    .post__date {
+      color: rgb(255, 255, 255);
+    }
+    .post__text {
+      color: rgb(199, 178, 153);
+    }
+  }
+}
+.post__date {
+  padding-top: 19px;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 1.67;
+  text-align: left;
+  color: rgb(54, 54, 54);
+  transition: color 200ms;
+}
+.post__text {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.43;
+  text-align: left;
+  color: rgb(85, 85, 85);
+  padding: 10px 0 20px 0;
+  border-bottom: 1px solid rgb(37, 37, 37);
+  transition: color 200ms;
+}
+.tweet {
+  &:hover {
+    .tweet__time {
+      color: rgb(255, 255, 255);
+    }
+    .tweet__text {
+      color: rgb(199, 178, 153);
+    }
+  }
+}
+
+.tweet__text {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.43;
+  text-align: left;
+  color: rgb(85, 85, 85);
+  padding: 17px 0 10px 0;
+  transition: color 200ms;
+}
+.tweet__time {
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 1.67;
+  text-align: left;
+  color: rgb(54, 54, 54);
+  padding-bottom: 23px;
+  border-bottom: 1px solid rgb(37, 37, 37);
+  transition: color 200ms;
+}
+.bottom-pics-wrap {
+  width: 270px;
+  @media (max-width: 950px) {
+   width: 100%; 
+  }
+}
+.bottom-pics-container {
+  @media (max-width: 950px) {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+   }   
+}
+.bottom-pic {
+  transition: transform 200ms;
+  cursor: pointer;
+  &:hover {
+    transform: scale(1.1);
+  }
+   @media (max-width:600px) {
+    @media (max-width:600px) {
+      display: block;
+      width: calc(25%-10px);
+    }
+  }
+}

@@ -1,0 +1,222 @@
+@import "var.scss";
+
+.section-1 {
+  width: 100%;
+}
+
+.directions-container {
+  @include basic-width;
+  padding-bottom: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 80px;
+  @media (max-width: 1200px) {
+    padding-top: 30px;
+  }
+  @media (max-width: 800px) {
+    padding-bottom: 0;
+  }
+ 
+}
+
+.directions {
+  width: 25%;
+  @media (max-width: 1200px){
+    width: 50%;
+    padding: 15px;
+   }
+   @media (max-width: 768px){
+    width: 100%;
+  }
+}
+
+.directions__title {
+  padding-top: 73px;
+  padding-bottom: 14px;
+  text-align: center;
+  a {
+    font-family: Raleway;
+    font-size: 22px;
+    font-weight: 600;
+    text-align: center;
+    color: rgb(85, 85, 85);
+    transition: color 200ms;
+  }
+  &:hover a {
+    color: rgb(199, 178, 153);
+  }
+  &:hover ~ .directions__text:after {
+    border-bottom: 3px solid rgb(199, 178, 153);
+  }
+}
+
+.directions__text {
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.71;
+  color: rgb(140, 140, 140);
+  padding-bottom: 30px;
+  &:after {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 70px;
+    height: 28px;
+    border-bottom: 3px solid rgb(241, 238, 233);
+    transition: border-bottom 200ms;
+  }
+}
+
+.web {
+  background: url("../img/desktop/1.png") no-repeat center 0;
+  &:hover {
+    background: url("../img/desktop/1-hover.png") no-repeat center 0;
+  }
+}
+
+.dev {
+  background: url("../img/desktop/2.png") no-repeat center 0;
+  &:hover {
+    background: url("../img/desktop/2-hover.png") no-repeat center 0;
+  }
+}
+
+.custom {
+  background: url("../img/desktop/3.png") no-repeat center 0;
+  &:hover {
+    background: url("../img/desktop/3-hover.png") no-repeat center 0;
+  }
+}
+
+.marketing {
+  background: url("../img/desktop/4.png") no-repeat center 0;
+  &:hover {
+    background: url("../img/desktop/4-hover.png") no-repeat center 0;
+  }
+}
+
+.ideas-wrap {
+  width: 100%;
+  background-color: #fbfaf8;
+}
+.ideas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @include basic-width;
+}
+.ideas__title {
+  padding-top: 48px;
+  font-family: Raleway;
+  font-size: $title-fz;
+  font-weight: 600;
+  text-align: center;
+  color: $title-color; 
+  @media (max-width: 800px) {
+    padding-top: 50px;    
+  }
+  @media (max-width:720px) {
+    font-size: $title-fz-tablet;
+  }
+  @media (max-width:620px) {
+    font-size: $title-fz-mobile;   
+  }
+}
+
+.ideas__text {
+  max-width: 760px;
+  width: 100%;
+  padding:15px 0 40px 0;
+  font-family: Montserrat;
+  font-size: $text-fz;
+  font-weight: 300;
+  line-height: 1.75;
+  text-align: center;
+  color: $text-color;
+  @media (max-width:720px) {
+    font-size: $text-fz-tablet;
+  }
+  @media (max-width:620px) {
+    font-size: $text-fz-mobile;   
+  }
+}
+.ideas__pics {
+  width: 100%;
+  position: relative;
+}
+
+.browsers-pic {
+  display: block;
+ position: absolute; 
+}
+.br-left {  
+  left: 0;
+  top: 82px;
+  @media (max-width: 855px) {
+    display: none;
+  }
+}
+.br-center {
+  position: relative;
+ left: 0;
+ right: 0; 
+ margin: auto;
+ z-index: 10;
+}
+.br-right {  
+  right: 0;  
+  top: 82px;
+  @media (max-width: 855px) {
+    display: none;
+  }
+}
+
+.gradient-bar {
+  width: 100%;
+  background-image: linear-gradient(to top, rgb(33, 27, 25), rgb(78, 52, 39));
+}
+
+.gradient-bar__container {
+  @include basic-width;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @media (max-width: 738px) {
+    flex-direction: column;
+    padding-bottom: 15px;
+  }
+}
+.gradient-bar__title {
+  font-weight: 400;
+  font-family: Raleway;
+  font-size: 28px;
+  text-align: left;
+  color: rgb(255, 255, 255);
+  padding-top: 48px;
+  @media (max-width: 570px) {
+    text-align: center;
+    font-size: 22px;
+  }
+}
+.gradient-bar__Waxom-word {
+  color: rgb(199, 178, 153);
+}
+
+.gradient-bar__text {
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 300;
+  text-align: left;
+  color: rgb(97, 88, 85);
+  padding-bottom: 48px;
+  @media (max-width: 570px) {
+    text-align: center;
+    padding-top: 10px;
+    font-size: 14px;
+  }
+}
+.gradient-bar__button {
+  @include btn-style;
+}

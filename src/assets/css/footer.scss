@@ -1,0 +1,33 @@
+@import "var.scss";
+
+.footer {
+ width: 100%;
+ background-color: rgb(17, 17, 17);
+ height: 100px;
+ display: flex;
+ align-items: center;
+}
+
+.footer-container {
+  @include basic-width;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__links {
+  font-family: Montserrat;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 1.54;
+  text-align: left;
+  color: rgb(85, 85, 85);
+  transition: color 200ms;
+  &:not(:last-child):after {
+    content: '|';    
+    margin: 0 10px 0 10px;
+  }
+  &:hover {
+    color: rgb(149, 149, 149);
+  }
+}
