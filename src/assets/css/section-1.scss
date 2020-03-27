@@ -58,12 +58,17 @@
   line-height: 1.71;
   color: rgb(140, 140, 140);
   padding-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
   &:after {
     content: "";
     display: block;
     margin: 0 auto;
+    bottom: 0;
     width: 70px;
-    height: 28px;
+    height: 30px;
     border-bottom: 3px solid rgb(241, 238, 233);
     transition: border-bottom 200ms;
   }
@@ -147,7 +152,7 @@
   position: relative;
 }
 
-.browsers-pic {
+.ideas-pics-container__browsers-pic {
   display: block;
  position: absolute; 
 }

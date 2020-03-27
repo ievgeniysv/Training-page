@@ -58,10 +58,10 @@
   display: none;
  }
 }
-.menu-element {
+.header-menu__element {
   line-height: 56px;
 }
-.menu-links {
+.header-menu__links {
   width: 42px;
   height: 10px;
   object-fit: contain;
@@ -75,7 +75,7 @@
     color: rgb(199, 178, 153);    
   }
 }
-.search-wrap {
+.search-container {
   display: flex;
   width: 72px;
   justify-content: space-between;

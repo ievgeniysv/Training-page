@@ -127,7 +127,7 @@
     text-align: center;
   }
 }
-.post {
+.posts-and-tweet-container__post {
   &:hover {
     .post__date {
       color: rgb(255, 255, 255);
@@ -195,14 +195,14 @@
    width: 100%; 
   }
 }
-.bottom-pics-container {
+.bottom-pics {
   @media (max-width: 950px) {
     display: flex;
     justify-content: space-between;
     width: 100%;
    }   
 }
-.bottom-pic {
+.bottom-pics-pic {
   transition: transform 200ms;
   cursor: pointer;
   &:hover {

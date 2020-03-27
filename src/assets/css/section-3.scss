@@ -26,7 +26,7 @@
   object-fit: fill;
 }
 
-.mobile-and-posts-text-wrap {
+.mobile-and-posts__text-wrap {
   padding-left: 30px; 
   @media (max-width:620px) {
     padding-left: 0;   
@@ -87,15 +87,14 @@
   }
   @media (max-width:620px) {
     font-size: 12px;  
-  }
+  }  
 }
 
 .bottom-gradient-bar {
   width: 100%;
-  background-image: linear-gradient(to top, rgb(33, 27, 25), rgb(78, 52, 39));
-  
+  background-image: linear-gradient(to top, rgb(33, 27, 25), rgb(78, 52, 39));  
 }
-.bottom-gradient-bar-items {
+.bottom-gradient-bar__items {
   @include basic-width;
   display: flex;
   justify-content: space-evenly;

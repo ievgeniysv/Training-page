@@ -11,7 +11,7 @@ let conf = {
     path: path.resolve(__dirname, './dist'),
     filename: 'assets/js/[name].js',   
   },
-  /* devtool: 'source-map', */
+ // devtool: 'source-map', 
   devServer: {
     port: 8081,
     overlay: true,

@@ -13,11 +13,11 @@
   font-weight: 600;
   text-align: center;
   color: $title-color;
-  @media (max-width:720px) {
+  @media (max-width: 720px) {
     font-size: $title-fz-tablet;
   }
-  @media (max-width:620px) {
-    font-size: $title-fz-mobile;   
+  @media (max-width: 620px) {
+    font-size: $title-fz-mobile;
   }
 }
 .projects__text {
@@ -30,25 +30,25 @@
   line-height: 1.75;
   text-align: center;
   color: $text-color;
-  @media (max-width:720px) {
+  @media (max-width: 720px) {
     font-size: $text-fz-tablet;
   }
-  @media (max-width:620px) {
-    font-size: $text-fz-mobile;   
+  @media (max-width: 620px) {
+    font-size: $text-fz-mobile;
   }
 }
-.projects__buttons {  
+.projects__buttons {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   max-width: 605px;
   width: 100%;
   padding-bottom: 40px;
-  @media (max-width: 615px){
+  @media (max-width: 615px) {
     justify-content: space-around;
   }
 }
-.project__button {
+.project-btns__button {
   width: calc(20%-10px);
   height: 32px;
   border-radius: 3px;
@@ -66,17 +66,12 @@
   }
   @media (max-width: 615px) {
     width: 110px;
-  }
-}
-
-.pr-btn-m {
-  @media (max-width: 615px){
     margin-bottom: 10px;
   }
 }
 
-.project-wrap {
-  display:flex;
+.project-items {
+  display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
@@ -84,46 +79,50 @@
 .project {
   position: relative;
   width: calc(33.333%-20px);
-  background-color: rgb(251, 250, 248); 
+  background-color: rgb(251, 250, 248);
+  display: flex;
+  flex-direction: column;
   &:hover {
     background-color: rgb(54, 47, 45);
     .project__pic {
-      filter: brightness(0.5)
+      filter: brightness(0.5);
     }
     .projects__title {
       color: rgb(255, 255, 255);
-    }    
+    }
     .projects__text {
-      
       color: rgb(199, 178, 153);
     }
     .lupa-and-chain {
       display: flex;
     }
-  }  
-  &:hover :before {      
-    border-bottom-color:  rgb(54, 47, 45);
+  }
+  &:hover :before {
+    border-bottom-color: rgb(54, 47, 45);
   }
   @media (max-width: 992px) {
     width: calc(50%-10px);
   }
   @media (max-width: 615px) {
-    width: 100%
+    width: 100%;
   }
 }
 
-.project-margin-btm {
+.project-items__item {
   margin-bottom: 30px;
   @media (max-width: 992px) {
     margin-bottom: 10px;
   }
 }
 
- .project__pic {
-   position: relative;
-   width: 100%;
-   transition: filter 200ms;
-} 
+.project__pic {
+  display: block;
+  width: 370px;
+  height: 237px;
+  position: relative;
+  width: 100%;
+  transition: filter 200ms;
+}
 .project__title {
   position: relative;
   padding: 21px 37px 6px 30px;
@@ -134,7 +133,7 @@
   color: rgb(199, 178, 153);
   transition: filter 200ms;
   &:before {
-    top: -14px;
+    top: -10px;
     content: "";
     position: absolute;
     display: block;
@@ -143,16 +142,16 @@
     border-color: transparent transparent #fbfaf8;
     border-style: solid;
     border-width: 0 15px 10px;
-   }
-   &:hover{
-    filter: brightness(130%);    
   }
-   @media (max-width: 768px) {
+  &:hover {
+    filter: brightness(130%);
+  }
+  @media (max-width: 768px) {
     font-size: 18px;
-   }
-   @media (max-width: 615px) {
-   text-align: center;
-   font-size: 22px;
+  }
+  @media (max-width: 615px) {
+    text-align: center;
+    font-size: 22px;
   }
 }
 .project__text {
@@ -164,74 +163,79 @@
   text-align: left;
   transition: color 200ms;
   color: rgb(209, 209, 209);
+  display: flex;
+  height: 100%;
+  align-items: center;
   @media (max-width: 768px) {
     font-size: 13px;
-   }
-   @media (max-width: 615px) {
+  }
+  @media (max-width: 615px) {
     text-align: center;
     font-size: 18px;
-   }
+  }
 }
 
-.lupa-and-chain {
+.project__lupa-and-chain {
   z-index: 5;
   display: none;
   position: absolute;
   top: 30%;
-  left:0;
+  left: 0;
   right: 0;
   margin: auto;
   width: 80px;
   justify-content: space-between;
 }
-.chain {
+.lupa-and-chain__chain {
   display: block;
   width: 26px;
   height: 26px;
-  background-image: url('../img/desktop/link.png');
+  background-image: url("../img/desktop/link.png");
   background-repeat: no-repeat;
 }
-.lupa {
+.lupa-and-chain__lupa {
   display: block;
   width: 26px;
   height: 26px;
-  background-image: url('../img/desktop/lupa.png');
+  background-image: url("../img/desktop/lupa.png");
   background-repeat: no-repeat;
 }
-
 
 .btm-more-container {
   padding: 4px 0 80px 0;
 }
 .more-btn {
- @include btn-style;
+  @include btn-style;
 }
 
 .video-presentation {
   position: relative;
+  min-height: 705px;
+  @media (max-width: 1200px) {
+    min-height: 580px;
+  }
+  @media (max-width: 768px) {
+    min-height: 470px;
+  }
+  @media (max-width: 550px) {
+    min-height: 350px;
+  }
 }
 
 .video-presentation__img {
+  position: absolute;
   width: 100%;
   filter: brightness(60%);
-  height: 705px;
+  height: 100%;
   object-fit: cover;
-  @media (max-width: 1200px) {
-    height: 580px;
-  }
-  @media (max-width: 768px) {
-    height: 470px;
-  }
-  @media (max-width: 550px) {
-    height: 350px;
-  }
+
 }
 .videp-presentation__icon {
   display: block;
   width: 100px;
   height: 100px;
-  background: url('../img/desktop/play-video-icon.png') no-repeat center center;
-  background-size:contain;
+  background: url("../img/desktop/play-video-icon.png") no-repeat center center;
+  background-size: contain;
   transition: transform 200ms;
   &:hover {
     transform: scale(1.1);
@@ -247,12 +251,10 @@
 }
 .video-presentation__text-wrap {
   padding-top: 225px;
-  position: absolute;
+  padding-bottom: 20px;
+  position: relative;
   max-width: 550px;
-  width: 100%;  
-  top: 0;
-  left: 0;
-  right: 0;  
+  width: 100%;
   margin: auto;
   @media (max-width: 1200px) {
     padding-top: 115px;
@@ -290,7 +292,7 @@
   @media (max-width: 768px) {
     font-size: 14px;
   }
-  @media (max-width: 550px){
+  @media (max-width: 550px) {
     font-size: 12px;
     padding: 30px 0 35px;
   }

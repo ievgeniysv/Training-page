@@ -7,7 +7,7 @@
 
 @mixin btn-style {
   width: 170px;
-  height: 50px; 
+  min-height: 50px; 
   border-radius: 3px;
   background-color: rgb(153, 134, 117);
   font-family: Raleway;

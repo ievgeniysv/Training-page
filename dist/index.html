@@ -16,9 +16,9 @@
       <!-- Additional required wrapper -->
       <div class="swiper-wrapper">
         <!-- Slides -->
-        <div class="swiper-slide"><img src="assets/img/slider/1.jpg" alt=""></div>
-        <div class="swiper-slide"><img src="assets/img/slider/2.jpg" alt=""></div>
-        <div class="swiper-slide"><img src="assets/img/slider/3.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="assets/img/slider/1.jpg" alt="top slider 1"></div>
+        <div class="swiper-slide"><img src="assets/img/slider/2.jpg" alt="top slider 2"></div>
+        <div class="swiper-slide"><img src="assets/img/slider/3.jpg" alt="top slider 3"></div>
 
       </div>
       <!-- If we need pagination -->
@@ -33,22 +33,22 @@
       <div class="mob-menu__row"></div>
       <div class="mob-menu__row"></div>
     </div>
-    <a href="" class="logo"><img src="assets/img/desktop/logo.png" alt=""></a>
+    <a href="" class="logo"><img aria-label = "Logo" src="assets/img/desktop/logo.png" alt="Logo"></a>
     <nav class="header-menu">
-      <ul>
-        <li class="menu-element"><a href="" class="menu-links">Home</a></li>
-        <li class="menu-element"><a href="" class="menu-links">About Us</a></li>
-        <li class="menu-element"><a href="" class="menu-links">Portfolio</a></li>
-        <li class="menu-element"><a href="" class="menu-links">Features</a></li>
-        <li class="menu-element"><a href="" class="menu-links">Blog</a></li>
-        <li class="menu-element"><a href="" class="menu-links">Pricing</a></li>
-        <li class="menu-element"><a href="" class="menu-links">Shortcodes</a></li>
-        <li class="menu-element"><a href="" class="menu-links">Contact</a></li>
+      <ul class="header-menu__list">
+        <li class="header-menu__element"><a href="" class="header-menu__links">Home</a></li>
+        <li class="header-menu__element"><a href="" class="header-menu__links">About Us</a></li>
+        <li class="header-menu__element"><a href="" class="header-menu__links">Portfolio</a></li>
+        <li class="header-menu__element"><a href="" class="header-menu__links">Features</a></li>
+        <li class="header-menu__element"><a href="" class="header-menu__links">Blog</a></li>
+        <li class="header-menu__element"><a href="" class="header-menu__links">Pricing</a></li>
+        <li class="header-menu__element"><a href="" class="header-menu__links">Shortcodes</a></li>
+        <li class="header-menu__element"><a href="" class="header-menu__links">Contact</a></li>
       </ul>
     </nav>
-    <div class="search-wrap">
-      <button class="search-wrap__cart"></button>
-      <button class="search-wrap__search"></button>
+    <div class="search-container">
+      <button aria-label = "Cart" class="search-wrap__cart"></button>
+      <button aria-label = "Search" class="search-wrap__search"></button>
     </div>
   </header>
   <div class="title center">
@@ -58,7 +58,7 @@
       <p class="tilte__therd-row">Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id
         quod mazim placerat facer possim assum.</p>
     </h1>
-    <button class="title__button center">Get Started</button>
+    <button class="title__button center btn">Get Started</button>
   </div>
   <section class="section-1">
     <div class="directions-container center">
@@ -88,10 +88,10 @@
         <h2 class="ideas__title">Waxom is Realization of your Ideas.</h2>
         <p class="ideas__text">Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas
           est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
-        <div class="ideas__pics">
-          <img src="assets/img/desktop/browser-left.jpg" alt="" class="browsers-pic br-left">
-          <img src="assets/img/desktop/browser-center.jpg" alt="" class="browsers-pic br-center">
-          <img src="assets/img/desktop/browser-right.jpg" alt="" class="browsers-pic br-right">
+        <div class="ideas__pics ideas-pics-container">
+          <img src="assets/img/desktop/browser-left.jpg" alt="browser-left" class="ideas-pics-container__browsers-pic br-left">
+          <img src="assets/img/desktop/browser-center.jpg" alt="browser-center" class="ideas-pics-container__browsers-pic br-center">
+          <img src="assets/img/desktop/browser-right.jpg" alt="browser-right" class="ideas-pics-container__browsers-pic br-right">
         </div>
       </div>
     </div>
@@ -102,7 +102,7 @@
             Theme</h2>
           <p class="gradient-bar__text">Don't Forget to Rate the Template. Thanks so much!</p>
         </div>
-        <button class="gradient-bar__button">Purchase Now</button>
+        <button class="gradient-bar__button btn">Purchase Now</button>
       </div>
     </div>
   </section>
@@ -111,75 +111,75 @@
       <h2 class="projects__title">Our Latest Projects.</h2>
       <p class="projects__text center">Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius.
         Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
-      <div class="projects__buttons center">
-        <button class="project__button pr-btn-m">All</button>
-        <button class="project__button pr-btn-m">Web Design</button>
-        <button class="project__button pr-btn-m">Mobile App</button>
-        <button class="project__button pr-btn-m">Illustration</button>
-        <button class="project__button pr-btn-m">Photography</button>
+      <div class="projects__buttons project-btns center">
+        <button class="project-btns__button">All</button>
+        <button class="project-btns__button">Web Design</button>
+        <button class="project-btns__button">Mobile App</button>
+        <button class="project-btns__button">Illustration</button>
+        <button class="project-btns__button">Photography</button>
       </div>
-      <div class="project-wrap">
-        <div class="project project-margin-btm">
-          <div class="lupa-and-chain">
-            <button class="chain"></button>
-            <button class="lupa"></button>
+      <div class="project-items">
+        <div class="project project-items__item">
+          <div class="project__lupa-and-chain lupa-and-chain">
+            <button class="lupa-and-chain__chain"></button>
+            <button class="lupa-and-chain__lupa"></button>
           </div>
-          <img src="assets/img/desktop/project-1.jpg" alt="Проект-1" class="project__pic">
+          <img src="assets/img/desktop/project-1.jpg" alt="Project-1" class="project__pic">
           <h2 class="project__title"><a class="project__link" href="">Claritas Etiam Processus</a></h2>
           <p class="project__text">Photography, Nature</p>
         </div>
-        <div class="project project-margin-btm">
-          <div class="lupa-and-chain">
-            <button class="chain"></button>
-            <button class="lupa"></button>
+        <div class="project project-items__item">
+          <div class="project__lupa-and-chain lupa-and-chain">
+            <button class="lupa-and-chain__chain"></button>
+            <button class="lupa-and-chain__lupa"></button>
           </div>
-          <img src="assets/img/desktop/project-1.jpg" alt="Проект-2" class="project__pic">
+          <img src="assets/img/desktop/project-1.jpg" alt="Project-2" class="project__pic">
           <h2 class="project__title"><a href="" class="project__link">Quam Nutamus Farum</a></h2>
           <p class="project__text">Graphic Design, Mock-Up</p>
         </div>
-        <div class="project project-margin-btm">
-          <div class="lupa-and-chain">
-            <button class="chain"></button>
-            <button class="lupa"></button>
+        <div class="project project-items__item">
+          <div class="project__lupa-and-chain lupa-and-chain">
+            <button class="lupa-and-chain__chain"></button>
+            <button class="lupa-and-chain__lupa"></button>
           </div>
-          <img src="assets/img/desktop/project-3.jpg" alt="Проект-3" class="project__pic">
+          <img src="assets/img/desktop/project-3.jpg" alt="Project-3" class="project__pic">
           <h2 class="project__title"><a href="" class="project__link">Usus Legentis Videntur</a></h2>
           <p class="project__text">Photography, Holiday</p>
         </div>
-        <div class="project project-margin-btm">
-          <div class="lupa-and-chain">
-            <button class="chain"></button>
-            <button class="lupa"></button>
+        <div class="project project-items__item">
+          <div class="project__lupa-and-chain lupa-and-chain">
+            <button class="lupa-and-chain__chain"></button>
+            <button class="lupa-and-chain__lupa"></button>
           </div>
-          <img src="assets/img/desktop/project-4.jpg" alt="Проект-4" class="project__pic">
+          <img src="assets/img/desktop/project-4.jpg" alt="Project-4" class="project__pic">
           <h2 class="project__title"><a href="" class="project__link">Claritas Etiam Processus</a></h2>
           <p class="project__text">Photography, Nature</p>
         </div>
-        <div class="project project-margin-btm">
-          <div class="lupa-and-chain">
-            <button class="chain"></button>
-            <button class="lupa"></button>
+        <div class="project project-items__item">
+          <div class="project__lupa-and-chain lupa-and-chain">
+            <button class="lupa-and-chain__chain"></button>
+            <button class="lupa-and-chain__lupa"></button>
           </div>
-          <img src="assets/img/desktop/project-5.jpg" alt="Проект-5" class="project__pic">
+          <img src="assets/img/desktop/project-5.jpg" alt="Project-5" class="project__pic">
           <h2 class="project__title"><a href="" class="project__link">Quam Nutamus Farum</a></h2>
           <p class="project__text">Graphic Design, Mock-Up</p>
         </div>
-        <div class="project project-margin-btm">
-          <div class="lupa-and-chain">
-            <button class="chain"></button>
-            <button class="lupa"></button>
+        <div class="project project-items__item">
+          <div class="project__lupa-and-chain lupa-and-chain">
+            <button class="lupa-and-chain__chain"></button>
+            <button class="lupa-and-chain__lupa"></button>
           </div>
-          <img src="assets/img/desktop/project-6.jpg" alt="Проет-6" class="project__pic">
+          <img src="assets/img/desktop/project-6.jpg" alt="Project-6" class="project__pic">
           <h2 class="project__title"><a href="" class="project__link">Usus Legentis Videntur</a></h2>
           <p class="project__text">Photography, Holiday</p>
         </div>
         <div class="btm-more-container center">
-          <button class="more-btn">LOAD MORE</button>
+          <button class="more-btn btn">LOAD MORE</button>
         </div>
       </div>
     </div>
     <div class="video-presentation">
-      <img src="assets/img/desktop/video.jpg" alt="" class="video-presentation__img">
+      <img src="assets/img/desktop/video.jpg" alt="video" class="video-presentation__img">
       <div class="video-presentation__text-wrap">
         <button class="videp-presentation__icon center"></button>
         <h2 class="video-presentation__title">Waxom Video Presentation</h2>
@@ -192,9 +192,9 @@
   <section class="section-3">
     <div class="mobile-and-posts center">
       <div class="mobile-and-posts__img-container">
-        <img src="assets/img/desktop/i-phone-in-hand.png" alt="Phone in hand" class="mobile-and-posts__img">
+        <img aria-label = "Phone in hand" src="assets/img/desktop/i-phone-in-hand.png" alt="Phone in hand" class="mobile-and-posts__img">
       </div>
-      <div class="mobile-and-posts-text-wrap">
+      <div class="mobile-and-posts__text-wrap">
         <h2 class="mobile-and-posts__title">Excellent for Mobile Devices.</h2>
         <p class="mobile-and-posts__text">Qisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit
           lobortis nisl ut aliquip ex ea commodo consequat. Investigationes demonstraverunt lectores legere me lius quod
@@ -210,7 +210,7 @@
       </div>
     </div>
     <div class="bottom-gradient-bar">
-      <div class="bottom-gradient-bar-items center">
+      <div class="bottom-gradient-bar__items center">
         <div class="bottom-gradient-bar-item clients">
           <div class="bottom-gradient-bar-item__props ">
             <h2 class="bottom-gradient-bar-item__number">3587</h2>
@@ -250,47 +250,47 @@
       <p class="recent-posts__text">Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius.
         Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
     </div>
-    <div class="swiper-bottom-container center">
+    <div class="swiper-bottom-container bottom-slides-container center">
       <!-- Additional required wrapper -->
       <div class="swiper-wrapper">
         <!-- Slides -->
         <div class="swiper-slide">
-          <div class="recent-post-slide-container swiper-slide">
-            <img src="assets/img/desktop/bottom-slide-1.jpg" alt="" class="recent-post-slide-container__img">
-            <div class="recent-post-slide-container__date date">
+          <div class="bottom-slide swiper-slide">
+            <img src="assets/img/desktop/bottom-slide-1.jpg" alt="bottom slide 1" class="bottom-slide__img">
+            <div class="bottom-slide__date date">
               <p class="date__number">30</p>
               <p class="date__month">Sep.</p>
             </div>
-            <h2 class="recent-post-slide-container__title">Lorem ipsum dolor sit amet</h2>
-            <p class="recent-post-slide-container__text">Claritas est etiam processus dynamicus, qui sequitur mutationem
+            <h2 class="bottom-slide__title">Lorem ipsum dolor sit amet</h2>
+            <p class="bottom-slide__text">Claritas est etiam processus dynamicus, qui sequitur mutationem
               consuetudium.</p>
-            <a href="" class="recent-post-slide-container__read-more">Read More</a>
+            <a href="" class="bottom-slide__read-more">Read More</a>
           </div>
         </div>
         <div class="swiper-slide">
-          <div class="swiper-slide recent-post-slides__slide recent-post-slide-container">
-            <img src="assets/img/desktop/bottom-slide-2.jpg" alt="" class="recent-post-slide-container__img">
-            <div class="recent-post-slide-container__date date">
+          <div class="swiper-slide recent-post-slides__slide bottom-slide">
+            <img src="assets/img/desktop/bottom-slide-2.jpg" alt="bottom slide 2" class="bottom-slide__img">
+            <div class="bottom-slide__date date">
               <p class="date__number">30</p>
               <p class="date__month">Sep.</p>
             </div>
-            <h2 class="recent-post-slide-container__title">Lorem ipsum dolor sit amet</h2>
-            <p class="recent-post-slide-container__text">Claritas est etiam processus dynamicus, qui sequitur mutationem
+            <h2 class="bottom-slide__title">Lorem ipsum dolor sit amet</h2>
+            <p class="bottom-slide__text">Claritas est etiam processus dynamicus, qui sequitur mutationem
               consuetudium.</p>
-            <a href="" class="recent-post-slide-container__read-more">Read More</a>
+            <a href="" class="bottom-slide__read-more">Read More</a>
           </div>
         </div>
         <div class="swiper-slide">
-          <div class="swiper-slide recent-post-slides__slide recent-post-slide-container">
-            <img src="assets/img/desktop/bottom-slide-3.jpg" alt="" class="recent-post-slide-container__img">
-            <div class="recent-post-slide-container__date date">
+          <div class="swiper-slide recent-post-slides__slide bottom-slide">
+            <img src="assets/img/desktop/bottom-slide-3.jpg" alt="bottom slide 3" class="bottom-slide__img">
+            <div class="bottom-slide__date date">
               <p class="date__number">30</p>
               <p class="date__month">Sep.</p>
             </div>
-            <h2 class="recent-post-slide-container__title">Lorem ipsum dolor sit amet</h2>
-            <p class="recent-post-slide-container__text">Claritas est etiam processus dynamicus, qui sequitur mutationem
+            <h2 class="bottom-slide__title">Lorem ipsum dolor sit amet</h2>
+            <p class="bottom-slide__text">Claritas est etiam processus dynamicus, qui sequitur mutationem
               consuetudium.</p>
-            <a href="" class="recent-post-slide-container__read-more">Read More</a>
+            <a href="" class="bottom-slide__read-more">Read More</a>
           </div>
         </div>
       </div>
@@ -306,25 +306,25 @@
       <img src="assets/img/desktop/section-5-img.jpg" alt="" class="section-5__img">
       <div class="section-5-content center">
         <div class="advertising">
-          <a href=""><img src="assets/img/desktop/adv-logo-01.png" alt="" class="adversting__img"></a>
+          <a href=""><img src="assets/img/desktop/adv-logo-01.png" alt="The barber" class="adversting__img"></a>
         </div>
         <div class="advertising">
-          <a href=""><img src="assets/img/desktop/adv-logo-02.png" alt="" class="adversting__img"></a>
+          <a href=""><img src="assets/img/desktop/adv-logo-02.png" alt="High quality products" class="adversting__img"></a>
         </div>
         <div class="advertising">
-          <a href=""><img src="assets/img/desktop/adv-logo-03.png" alt="" class="adversting__img"></a>
+          <a href=""><img src="assets/img/desktop/adv-logo-03.png" alt="We are designers" class="adversting__img"></a>
         </div>
         <div class="advertising">
-          <a href=""> <img src="assets/img/desktop/adv-logo-04.png" alt="" class="adversting__img"></a>
+          <a href=""> <img src="assets/img/desktop/adv-logo-04.png" alt="Cafe Royal" class="adversting__img"></a>
         </div>
       </div>
     </div>
     <div class="section-5-bottom-container">
       <div class="section-5-bottom-content-container center">
         <div class="section-5-bottom-content-container__left bottom-contnent-left">
-          <div class="bottom-logo">
-            <a class="bottom-logo__link" href="">
-              <img src="assets/img/desktop/bottom-logo.png" alt="">
+          <div class="bottom-contnent-left__logo">
+            <a class="bottom-contnent-left__logo-link" href="">
+              <img aria-label="bottom logo" src="assets/img/desktop/bottom-logo.png" alt="Bottom logo">
             </a>
           </div>
           <p class="bottom-contnent-left__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
@@ -335,43 +335,46 @@
         <div class="section-5-bottom-content-container__main bottom-contnent-main">
           <div class="posts-and-tweet-container">
             <h3 class="posts-and-tweet-container__title">Recent Posts</h3>
-            <div class="post">
+            <div class="posts-and-tweet-container__post post">
               <p class="post__date">September 08, 2015</p>
               <p class="post__text"><a href="">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</a></p>
             </div>
-            <div class="post">
+            <div class="posts-and-tweet-container__post post">
               <p class="post__date">September 08, 2015</p>
               <p class="post__text"><a href="">Diam nonummy nibh euismod tincidunt ut laoreet dolore magna</a></p>
             </div>
-            <div class="post">
+            <div class="posts-and-tweet-container__post post">
               <p class="post__date">September 08, 2015</p>
-              <p class="post__text"><a href="">Claritas est etiam processus dynamicus, qui sequitur mutationem per seacula quarta
-                decima</a></p>
+              <p class="post__text"><a href="">Claritas est etiam processus dynamicus, qui sequitur mutationem per
+                  seacula quarta
+                  decima</a></p>
             </div>
           </div>
           <div class="posts-and-tweet-container">
             <h3 class="posts-and-tweet-container__title">Our Twitter</h3>
-            <div class="tweet">
-              <p class="tweet__text"><a href="">@waxom Cum soluta nobis eleifend option congue nihil imperdiet doming</a></p>
+            <div class="posts-and-tweet-container__tweet tweet">
+              <p class="tweet__text"><a href="">@waxom Cum soluta nobis eleifend option congue nihil imperdiet
+                  doming</a></p>
               <p class="tweet__time">3 mins ago</p>
             </div>
-            <div class="tweet">
-              <p class="tweet__text"><a href="">Mirum est #envato notare quam littera gothica, quam nunc putamus parum anteposuerit
-                litterarum</a></p>
+            <div class="posts-and-tweet-container_tweet tweet">
+              <p class="tweet__text"><a href="">Mirum est #envato notare quam littera gothica, quam nunc putamus parum
+                  anteposuerit
+                  litterarum</a></p>
               <p class="tweet__time">5 hours ago</p>
             </div>
-            <div class="tweet">
+            <div class="posts-and-tweet-container__tweet tweet">
               <p class="tweet__text"><a href="">Soluta nobis option bit.ly/1Hniso7</a></p>
               <p class="tweet__time">20 days ago</p>
             </div>
           </div>
           <div class="bottom-pics-wrap">
             <h3 class="posts-and-tweet-container__title">Dribbble Widget</h3>
-            <div class="bottom-pics-container">
-              <img src="assets/img/desktop/bottom-pic-1.jpg" alt="" class="bottom-pic">
-              <img src="assets/img/desktop/bottom-pic-2.jpg" alt="" class="bottom-pic">
-              <img src="assets/img/desktop/bottom-pic-3.jpg" alt="" class="bottom-pic">
-              <img src="assets/img/desktop/bottom-pic-4.jpg" alt="" class="bottom-pic">
+            <div class="bottom-pics">
+              <img src="assets/img/desktop/bottom-pic-1.jpg" alt="Widget pic 1" class="bottom-pics-pic">
+              <img src="assets/img/desktop/bottom-pic-2.jpg" alt="Widget pic 2" class="bottom-pics-pic">
+              <img src="assets/img/desktop/bottom-pic-3.jpg" alt="Widget pic 3" class="bottom-pics-pic">
+              <img src="assets/img/desktop/bottom-pic-4.jpg" alt="Widget pic 4" class="bottom-pics-pic">
             </div>
           </div>
         </div>
@@ -393,4 +396,5 @@
     </div>
   </footer>
 <script type="text/javascript" src="assets/js/main.js"></script></body>
+
 </html>
