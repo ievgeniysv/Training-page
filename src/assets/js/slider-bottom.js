@@ -2,7 +2,7 @@ import Swiper from 'swiper';
 import '../../../node_modules/swiper/css/swiper.min.css';
 
 var myBottomSwiper = new Swiper('.swiper-bottom-container', {
-    // Optional parameters   
+    
     direction: 'horizontal',
     loop: true,
     slidesPerView: 3,
